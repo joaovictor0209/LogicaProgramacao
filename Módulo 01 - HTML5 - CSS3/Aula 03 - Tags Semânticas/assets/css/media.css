@@ -1,0 +1,27 @@
+@media (max-width: 780px) {
+
+    section.boxContainer {
+        max-width: 100%;
+        width: 100%;
+        background-color: #363940;
+        height: auto;
+        padding: 10px 0 30px 0;
+    }
+    
+    section.divisionContainer {
+        max-width: 100%;
+        width: 100%;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section.welcomeContainer,
+    section.qrContainer {
+        max-width: 100%;
+        width: 100%;
+    }
+}

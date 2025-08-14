@@ -33,7 +33,7 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: top top;
 }
 
 main.mainContainer {
@@ -47,6 +47,7 @@ main.mainContainer {
     flex-direction: column;
     position: relative;
     z-index: 2;
+    padding: 0 2%;
 }
 
 section.fallingSnowContainer {
