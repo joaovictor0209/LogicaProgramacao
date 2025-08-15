@@ -16,12 +16,18 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 50px;
     }
 
     section.welcomeContainer,
     section.qrContainer {
         max-width: 100%;
         width: 100%;
+    }
+
+    main.mainContainer {
+        background-color: transparent;
+        height: auto;
+        padding: 6%;
     }
 }

@@ -27,7 +27,8 @@
     src: url("../fonts/FontDiscord400.woff2");
 }
 
-html, body {
+html,
+body {
     height: 100%;
     background-image: url("../imgs/img-background.jpg");
     background-size: cover;
@@ -47,7 +48,7 @@ main.mainContainer {
     flex-direction: column;
     position: relative;
     z-index: 2;
-    padding: 0 2%;
+    padding: 0 6%;
 }
 
 section.fallingSnowContainer {
