@@ -1,0 +1,147 @@
+:root {
+    --bg-white: #ffffff;
+    --bg-green: #179506;
+    --bg-black: #000000;
+    --bg-gray: #999999;
+}
+
+main.mainContainer {
+    max-width: 100%;
+    width: 1280px;
+    margin: 40px auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+section.boxContainer {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+section.boxSingle {
+    background-color: var(--bg-white);
+    padding: 30px;
+    box-shadow: 2px 1px 3px 4px rgba(0, 0, 0, 0.167);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+figure.imgSingle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+figure.imgSingle img {
+    width: 320px;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+}
+
+section.promotionSingle {
+    max-width: 100%;
+    width: 100%;
+    background-color: var(--bg-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    margin: 5px 0 10px 0;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+section.promotionSingle h4 {
+    color: var(--bg-white);
+    font-weight: bolder;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+section.titleSingle {
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+section.titleSingle h2.title {
+    color: var(--bg-black);
+    font-weight: bolder;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: normal;
+    margin-bottom: 20px;
+}
+
+section.titleSingle span {
+    color: var(--bg-green);
+    background-color: transparent;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section.titleSingle h2 {
+    color: var(--bg-black);
+    background-color: transparent;
+    font-size: 22px;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: normal;
+    font-weight: 700;
+}
+
+section.titleSingle h3 {
+    color: var(--bg-black);
+    background-color: transparent;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: normal;
+    font-weight: 500;
+}
+
+section.buttonBuyContainer button {
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 0;
+    border: 1px solid var(--bg-black);
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: .5px;
+    margin: 8px 0 4px 0;
+}
+
+section.buttonBuyContainer button:hover {
+    position: relative;
+    bottom: -1.5px;
+    transition: .2s ease-in-out all;
+    color: var(--bg-green);
+}
