@@ -91,12 +91,12 @@ section.titleSingle {
 
 section.titleSingle h2.title {
     color: var(--bg-black);
-    font-weight: bolder;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 24px;
     font-style: normal;
     font-variant: normal;
     text-transform: normal;
-    margin-bottom: 20px;
+    margin: 10px 0 5px 0;
 }
 
 section.titleSingle span {
