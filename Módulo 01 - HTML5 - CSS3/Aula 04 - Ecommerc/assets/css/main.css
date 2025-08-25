@@ -41,6 +41,14 @@ section.boxSingle {
     position: relative;
 }
 
+section.boxSingle:hover {
+    position: relative;
+    bottom: -1.5px;
+    box-shadow: 2px 1px 4px 5px rgba(0, 0, 0, 0.404);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
 figure.imgSingle {
     display: flex;
     justify-content: center;
@@ -91,12 +99,13 @@ section.titleSingle {
 
 section.titleSingle h2.title {
     color: var(--bg-black);
-    font-weight: 500;
+    font-weight: bold;
     font-size: 24px;
     font-style: normal;
     font-variant: normal;
     text-transform: normal;
     margin: 10px 0 5px 0;
+    letter-spacing: .5px;
 }
 
 section.titleSingle span {
@@ -116,7 +125,7 @@ section.titleSingle h2 {
     font-style: normal;
     font-variant: normal;
     text-transform: normal;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 section.titleSingle h3 {
