@@ -2,6 +2,7 @@
     --clr-bege: #F6F3ED;
     --bg-gray: #515151;
     --bg-bege: #f0a534;
+    --clr-black: #212121;
 }
 
 header.headerContainer {
@@ -39,6 +40,18 @@ section.maxContainer {
     padding: 8px 0;
 }
 
+section.arrowContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    background-color: transparent;
+    margin: 0 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.145);
+}
+
 section.formContainer {
     height: 100%;
     display: flex;
@@ -57,7 +70,7 @@ figure.imgLogo {
 }
 
 section.formContainer form {
-    width: 400px;
+    width: 500px;
     height: 100%;
     background-color: transparent;
     display: flex;
@@ -78,7 +91,12 @@ section.formContainer form input {
     border-radius: 10px;
     background-color: var(--clr-bege);
     color: #333333;
-    font-size: 17px;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
+section.formContainer form input:focus {
+    border: 2.5px solid #008cff;
 }
 
 section.formContainer form svg {
@@ -106,7 +124,7 @@ nav.navContainer {
     height: auto;
     position: relative;
     background-color: var(--clr-bege);
-} 
+}
 
 nav.navContainer ul {
     display: flex;
@@ -396,23 +414,164 @@ figure.imgFavorite img {
     bottom: 2.1px;
 }
 
-footer.footerContainer {
-    width: 100%;
-    height: auto;
-    padding: 30px 0;
+
+section.bulletsContainer {
+    background-color: transparent;
+    width: 58%;
+    height: 40px;
+    position: absolute;
+    left: 21%;
+    bottom: -36px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    background-color: var(--bg-bege);
+    gap: 20px;
 }
 
-footer.footerContainer p {
-    font-size: 19px;
-    color: #333333;
+section.bulletSingle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.184);
+    position: relative;
+    cursor: pointer;
+}
+
+section.bulletSingle:hover {
+    background-color: transparent;
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.566);
+    transition: .2s ease-in-out;
+    position: relative;
+    bottom: -2px;
+    width: 19px;
+    height: 19px;
+}
+
+section.arrowContent:hover {
+    background-color: transparent;
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.566);
+    transition: .2s ease-in-out;
+    position: relative;
+    bottom: -2px;
+}
+
+footer.footerContainer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--clr-black);
+}
+
+section.contentFooter {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    position: relative;
+}
+
+section.divisionContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.contentSingle ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    background-color: transparent;
+}
+
+section.contentSingle ul li a {
+    display: inline-flex;
+    color: #c8c8c8;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: transparent;
+    opacity: 0.6;
+}
+
+section.contentSingle ul li a:hover {
+    color: #ffffff;
+    position: relative;
+    bottom: -2px;
+    transition: .2s ease-in-out all;
+    opacity: 1;
+}
+
+section.contentSingle ul.midiaSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.contentSingle h2 {
+    color: #ffffff;
     letter-spacing: .5px;
-    font-weight: 700;
-    text-transform: none;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 500;
     font-style: normal;
     font-variant: normal;
+}
+
+section.buttonWhatsApp {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 4;
+}
+
+figure.imgButton img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    object-position: center;
+}
+
+section.paymentMethod {
+    width: 100%;
+    position: relative;
+    border-top: 1px solid #c5c5c56e;
+    margin: 20px 0;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+section.paymentMethod h2 {
+    color: #ffffff;
+    letter-spacing: .5px;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-variant: normal;
+    position: relative;
+    top: 2px;
+}
+
+section.imgPayment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+} 
+
+figure.imgPaymentContent img {
+    width: 30px;
+    height: 20px;
+    object-fit: cover;
+    object-position: center;
 }
