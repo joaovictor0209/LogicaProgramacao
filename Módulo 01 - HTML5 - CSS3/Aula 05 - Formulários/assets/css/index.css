@@ -526,7 +526,7 @@ section.contentSingle h2 {
 
 section.buttonWhatsApp {
     position: fixed;
-    right: 10px;
+    right: 20px;
     bottom: 10px;
     z-index: 4;
 }
@@ -550,15 +550,16 @@ section.paymentMethod {
 }
 
 section.paymentMethod h2 {
-    color: #ffffff;
+    color: #c8c8c8;
     letter-spacing: .5px;
     font-size: 22px;
     margin-bottom: 15px;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     font-variant: normal;
     position: relative;
-    top: 2px;
+    top: 3px;
+    opacity: 1;
 }
 
 section.imgPayment {
