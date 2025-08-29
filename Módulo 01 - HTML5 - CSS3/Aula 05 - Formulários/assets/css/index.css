@@ -576,3 +576,28 @@ figure.imgPaymentContent img {
     object-fit: cover;
     object-position: center;
 }
+
+section.infoSales {
+    position: relative;
+}
+
+svg.svgSales {
+    position: relative;
+    top: 4px;
+}
+
+section.infoSales span {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    right: -6px;
+    top: -13px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: bold;
+}
